@@ -1,29 +1,44 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html><head>
     <meta charset="utf-8">
     <title>小于1px的线</title>
     <style type="text/css">
-      .p1{
-        border-top: 1px solid #ddd;
+      .div1{
         position: relative;
+        height: 100px;
+        width: 300px;
+        margin: 0 auto;
       }
-      .p1:after{
+      .border{
+        display: block;
         position: absolute;
-        content: "";
+        top: 0;
         left: 0;
-        bottom: -2px;
-        width: 100%;
-        height: 1px;
-        background-color: #ddd;
-        -webkit-transform: scaleY(0.5);
+        right: 0;
+        bottom: 0;
+        -webkit-transform: scaleY(0.25);
+        -webkit-transform-origin: 0 0;
+      }
+      .border i{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 1px solid #f60;
+        -webkit-transform: scaleY(2);
         -webkit-transform-origin: 0 0;
       }
     </style>
 </head>
 
 <body>
-<p class="p1">仅供参考，持续更新</p>
+<div class="div1">
+  仅供参考，持续更新
+  <span class="border"><i></i></span>
+</div>
+
 
 </body>
 </html>
