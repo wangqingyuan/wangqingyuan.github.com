@@ -4,31 +4,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>小于1px的线</title>
     <style type="text/css">
-      .div1{
+      .div1,.div2{
         position: relative;
         height: 100px;
         width: 300px;
         margin: 0 auto;
       }
-      .border{
+      .border:before,.border2:before{
         display: block;
+        content: "";
         position: absolute;
+        width: 400%;
         top: 0;
         left: 0;
-        right: 0;
         bottom: 0;
-        -webkit-transform: scale(0.25);
+        border-left: 1px solid #f60; 
+        border-right: 1px solid #f60; 
+        -webkit-transform: scaleX(0.25);
         -webkit-transform-origin: 0 0;
       }
-      .border i{
+      .border:after,.border2:after{
         display: block;
+        content: "";
         position: absolute;
+        height: 400%;
         top: 0;
         left: 0;
         right: 0;
-        bottom: 0;
-        border: 1px solid #f60;
-        -webkit-transform: scale(2);
+        border-top: 1px solid #f60; 
+        border-bottom: 1px solid #f60; 
+        -webkit-transform: scaleY(0.25);
+        -webkit-transform-origin: 0 0;
+      }
+      .border2:before{
+        width: 200%;
+        -webkit-transform: scaleX(0.5);
+        -webkit-transform-origin: 0 0;
+      }
+      .border2:after{
+        height: 200%;
+        -webkit-transform: scaleY(0.5);
         -webkit-transform-origin: 0 0;
       }
     </style>
@@ -37,7 +52,12 @@
 <body>
 <div class="div1">
   仅供参考，持续更新
-  <span class="border"><i></i></span>
+  <span class="border"><!-- <i></i> --></span>
+</div>
+<br>
+<div class="div2">
+  仅供参考，持续更新
+  <span class="border2"><!-- <i></i> --></span>
 </div>
 
 
