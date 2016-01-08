@@ -14,26 +14,26 @@
         display: block;
         content: "";
         position: absolute;
-        width: 200%;
+        width: 400%;
         top: 0;
         left: 0;
         bottom: 0;
         border-left: 1px solid #f60; 
         border-right: 1px solid #f60; 
-        -webkit-transform: scaleX(0.5);
+        -webkit-transform: scaleX(0.25);
         -webkit-transform-origin: 0 0;
       }
       .border:after,.border2:after{
         display: block;
         content: "";
         position: absolute;
-        height: 200%;
+        height: 400%;
         top: 0;
         left: 0;
         right: 0;
         border-top: 1px solid #f60; 
         border-bottom: 1px solid #f60; 
-        -webkit-transform: scaleY(0.5);
+        -webkit-transform: scaleY(0.25);
         -webkit-transform-origin: 0 0;
       }
       .border2:before{
@@ -51,12 +51,12 @@
 
 <body>
 <div class="div1">
-  仅供参考，持续更新
+  border-width:0.25px
   <span class="border"><!-- <i></i> --></span>
 </div>
 <br>
 <div class="div2">
-  仅供参考，持续更新
+  border-width:0.5px
   <span class="border2"><!-- <i></i> --></span>
 </div>
 
