@@ -4,13 +4,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>小于1px的线</title>
     <style type="text/css">
-      .div1,.div2{
+      .div1,.div2,.div3{
         position: relative;
         height: 100px;
         width: 300px;
         margin: 0 auto;
       }
-      .border:before,.border2:before{
+      .border:before,.border2:before,.border3:before{
         display: block;
         content: "";
         position: absolute;
@@ -23,7 +23,7 @@
         -webkit-transform: scaleX(0.25);
         -webkit-transform-origin: 0 0;
       }
-      .border:after,.border2:after{
+      .border:after,.border2:after,.border3:after{
         display: block;
         content: "";
         position: absolute;
@@ -46,18 +46,33 @@
         -webkit-transform: scaleY(0.5);
         -webkit-transform-origin: 0 0;
       }
+      .border3:before{
+        width: 300%;
+        -webkit-transform: scaleX(0.333);
+        -webkit-transform-origin: 0 0;
+      }
+      .border3:after{
+        height: 300%;
+        -webkit-transform: scaleY(0.333);
+        -webkit-transform-origin: 0 0;
+      }
     </style>
 </head>
 
 <body>
 <div class="div1">
   border-width:0.25px
-  <span class="border"><!-- <i></i> --></span>
+  <span class="border"></span>
 </div>
 <br>
 <div class="div2">
   border-width:0.5px
-  <span class="border2"><!-- <i></i> --></span>
+  <span class="border2"></span>
+</div>
+<br>
+<div class="div3">
+  border-width:0.6px
+  <span class="border3"></span>
 </div>
 
 
