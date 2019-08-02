@@ -1,80 +1,13 @@
 <!DOCTYPE html>
-<html><head>
+<html>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>小于1px的线</title>
+    <title>首页</title>
     <style type="text/css">
-      .div1,.div2,.div3{
-        position: relative;
-        height: 100px;
-        width: 300px;
-        margin: 0 auto;
-      }
-      .border:before,.border2:before,.border3:before{
-        display: block;
-        content: "";
-        position: absolute;
-        width: 400%;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        border-left: 1px solid #f60; 
-        border-right: 1px solid #f60; 
-        -webkit-transform: scaleX(0.25);
-        -webkit-transform-origin: 0 0;
-      }
-      .border:after,.border2:after,.border3:after{
-        display: block;
-        content: "";
-        position: absolute;
-        height: 400%;
-        top: 0;
-        left: 0;
-        right: 0;
-        border-top: 1px solid #f60; 
-        border-bottom: 1px solid #f60; 
-        -webkit-transform: scaleY(0.25);
-        -webkit-transform-origin: 0 0;
-      }
-      .border2:before{
-        width: 200%;
-        -webkit-transform: scaleX(0.5);
-        -webkit-transform-origin: 0 0;
-      }
-      .border2:after{
-        height: 200%;
-        -webkit-transform: scaleY(0.5);
-        -webkit-transform-origin: 0 0;
-      }
-      .border3:before{
-        width: 300%;
-        -webkit-transform: scaleX(0.333);
-        -webkit-transform-origin: 0 0;
-      }
-      .border3:after{
-        height: 300%;
-        -webkit-transform: scaleY(0.333);
-        -webkit-transform-origin: 0 0;
-      }
     </style>
 </head>
-
 <body>
-<div class="div1">
-  border-width:0.25px
-  <span class="border"></span>
-</div>
-<br>
-<div class="div2">
-  border-width:0.5px
-  <span class="border2"></span>
-</div>
-<br>
-<div class="div3">
-  border-width:0.6px
-  <span class="border3"></span>
-</div>
-
-
+玩玩
 </body>
 </html>
